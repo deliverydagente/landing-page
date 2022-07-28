@@ -1,0 +1,42 @@
+.BoxInputField {
+    width: 100%;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0px 14px 0px 0px;
+
+    border: 1px solid #ced4da;
+    margin: 10px 0px 5px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    input {
+        width: 100%;
+
+        border: 0;
+
+        outline: none;
+        text-decoration: none;
+
+        margin-left: 14px;
+        // margin-top: 1px;
+
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #212529;
+        cursor: pointer;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 14px;
+        color: #acb2b8;
+    }
+}

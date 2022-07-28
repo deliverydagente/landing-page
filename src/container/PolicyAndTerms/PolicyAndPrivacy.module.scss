@@ -1,0 +1,102 @@
+@import "./../../assets/styles/base.scss";
+
+.BoxPolicyAndPrivacy {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    .BoxLandingTitle {
+        width: 100%;
+        height: 300px;
+        min-height: 300px;
+        background-color: #dc213f;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 60px;
+        .BoxResponsiveLabel {
+            width: 100%;
+            max-width: 1080px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: white;
+        }
+    }
+    .BoxContent {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+
+        padding-top: 30px;
+
+        .BoxSubTitle {
+            width: 100%;
+            text-align: left;
+            height: min-content;
+            margin-bottom: -30px;
+
+            b {
+                color: $main-color;
+                cursor: pointer;
+            }
+        }
+        h2 {
+            color: $main-color;
+            margin: 20px 0px;
+        }
+        h3 {
+            color: $main-color;
+            margin: 20px 0px;
+        }
+        p {
+            margin-bottom: 20px;
+
+            // font-size: 18px;
+            // line-height: 26px;
+            a {
+                color: $main-color;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+        ol {
+            li {
+                margin: 0px 20px;
+            }
+        }
+        span {
+            display: block;
+            margin: 60px 0px 0px;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .BoxPolicyAndPrivacy {
+        .BoxLandingTitle {
+            height: 200px;
+            min-height: 200px;
+            .BoxResponsiveLabel {
+                font-size: 24px;
+            }
+        }
+        .BoxContent {
+            padding: 20px 20px 0px;
+            .BoxSubTitle {
+                text-align: left;
+
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}

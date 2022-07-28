@@ -1,0 +1,115 @@
+@import "./../../assets/styles/base.scss";
+
+.BoxHeaderLanding {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+
+    .BoxResponsive {
+        width: 100%;
+        max-width: $width-desktop;
+
+        padding: 0px 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .BoxLeftHeaderLanding {
+        padding: 20px 30px 20px 0px;
+        .BoxButtonLogo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            cursor: pointer;
+            .BoxIcon {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $main-color;
+                border-radius: 6px;
+                margin-right: 20px;
+                img {
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+            font-weight: 800;
+            font-size: 18px;
+            color: #3e3e3e;
+            line-height: 24px;
+            transition: color 0.4s ease-in-out;
+        }
+    }
+    .BoxRightHeaderLanding {
+        display: flex;
+    }
+}
+.ButtonRegular {
+    height: 40px;
+    padding: 9px 12px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 10px;
+    color: #585858;
+    transition: color 0.4s ease-in-out;
+
+    &:hover {
+        color: black;
+    }
+
+    cursor: pointer;
+    &.Active {
+        background-color: $main-color;
+        color: white;
+        padding: 10px 26px 8px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 840px) {
+    .BoxHeaderLanding {
+        height: 60px;
+
+        padding: 0px 0px;
+
+        .BoxLeftHeaderLanding {
+            padding: 20px 0px 20px 0px;
+            .BoxButtonLogo {
+                .BoxIcon {
+                    margin-right: 8px;
+                    background-color: white;
+                    svg {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+                .BoxText {
+                    margin-top: 1px;
+                    letter-spacing: -0.4px;
+                }
+            }
+        }
+    }
+    .ButtonRegular {
+        &.Active {
+            padding: 10px 18px 8px;
+            margin-left: 0px;
+        }
+    }
+}

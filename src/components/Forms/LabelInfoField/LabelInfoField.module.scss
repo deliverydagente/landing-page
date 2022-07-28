@@ -1,0 +1,29 @@
+@import "./../../../assets/styles/base.scss";
+
+.BoxLabelInfoField {
+    height: min-content;
+    font-size: 14px;
+    color: #6c757d;
+    cursor: pointer;
+    a {
+        color: $main-color;
+        text-decoration: none;
+        font-weight: 700;
+        &:link {
+            color: $main-color;
+            text-decoration: none;
+        }
+        &:visited {
+            color: $main-color;
+            text-decoration: none;
+        }
+        &:hover {
+            color: $main-color;
+            text-decoration: none;
+        }
+        &:active {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+}

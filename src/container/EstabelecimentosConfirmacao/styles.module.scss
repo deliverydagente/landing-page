@@ -1,0 +1,37 @@
+@import "./../../assets/styles/base.scss";
+
+.BoxLandingOne {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    img {
+        width: 100%;
+        max-width: 200px;
+        margin-top: 120px;
+    }
+
+    h1 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-weight: 800;
+    }
+    h3 {
+        width: 100%;
+        max-width: 650px;
+        padding: 0px 40px;
+        font-weight: 400;
+        text-align: center;
+        b {
+            color: $main-color;
+        }
+    }
+
+    button {
+        width: 200px;
+        margin-top: 30px;
+    }
+}
