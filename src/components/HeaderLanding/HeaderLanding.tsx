@@ -54,39 +54,17 @@ const HeaderLanding = ({ refPlaces }: HeaderLandingProps) => {
                         ) : null}
                     </div>
                 </section>
-                {isNotMobile ? (
-                    <section className={styles.BoxRightHeaderLanding}>
-                        {refPlaces ? (
-                            <div
-                                className={[styles.ButtonRegular].join(" ")}
-                                aria-hidden
-                                onClick={handleGoToPlaces}
-                            >
-                                Estabelecimentos
-                            </div>
-                        ) : null}
+                <section className={styles.BoxRightHeaderLanding}>
+                    {refPlaces ? (
                         <div
-                            onClick={handleOnClick}
-                            className={[
-                                styles.ButtonRegular,
-                                styles.Active,
-                            ].join(" ")}
+                            className={[styles.ButtonRegular].join(" ")}
                             aria-hidden
+                            onClick={handleGoToPlaces}
                         >
-                            Ir para o App
+                            Estabelecimentos
                         </div>
-                    </section>
-                ) : (
-                    <div
-                        onClick={handleOnClick}
-                        className={[styles.ButtonRegular, styles.Active].join(
-                            " "
-                        )}
-                        aria-hidden
-                    >
-                        Ir para o App
-                    </div>
-                )}
+                    ) : null}
+                </section>
             </div>
         </header>
     );
