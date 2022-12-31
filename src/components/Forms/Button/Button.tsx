@@ -1,6 +1,8 @@
-import ReactLoading from "react-loading";
+import React from "react";
+import CircularProgress from "@mui/material/CircularProgress";
 
 import styles from "./Button.module.scss";
+import { ButtonContainer } from "./styles";
 
 type ButtonProps = {
     label?: string;
@@ -8,19 +10,23 @@ type ButtonProps = {
     isLoading?: boolean;
 };
 
-const Button = ({ label, onClick, isLoading }: ButtonProps) => {
+const Button = ({ label, onClick, isLoading }: ButtonProps): JSX.Element => {
     return (
-        <button
-            type="button"
-            className={styles.BoxButtonDefault}
-            onClick={onClick}
-        >
-            {isLoading ? (
-                <ReactLoading className={styles.Loading} type="spin" />
-            ) : (
-                <>{label ?? "Button"}</>
-            )}
-        </button>
+        <ButtonContainer>
+            <button
+                type="button"
+                className={styles.BoxButtonDefault}
+                onClick={onClick}
+            >
+                {isLoading ? (
+                    <>
+                        <CircularProgress size={20} color="info" />
+                    </>
+                ) : (
+                    <>{label ?? "Button"}</>
+                )}
+            </button>
+        </ButtonContainer>
     );
 };
 
