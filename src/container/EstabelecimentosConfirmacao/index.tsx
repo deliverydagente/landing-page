@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as QueryString from "query-string";
 
-import Loading from "react-loading";
+import CircularProgress from "@mui/material/CircularProgress";
 import { useHistory } from "react-router-dom";
 import Button from "../../components/Forms/Button";
 import HeaderLanding from "../../components/HeaderLanding";
@@ -55,7 +55,7 @@ const EstabelecimentosConfirmacao = () => {
                     </>
                 ) : (
                     <div style={{ marginTop: 140 }}>
-                        <Loading color="#e01f40" />
+                        <CircularProgress color="error" />
                     </div>
                 )}
             </div>
