@@ -7,21 +7,18 @@ import EstabelecimentosConfirmacao from "../container/EstabelecimentosConfirmaca
 import LandingPage from "../pages/index";
 
 const Routes = () => {
-    return (
-        <Router>
-            <Route path="/" exact component={LandingPage} />
-            <Route path="/termos-de-uso" component={TermsOfUse} />
-            <Route
-                path="/politica-de-privacidade"
-                component={PolicyAndPrivacy}
-            />
-            <Route path="/estabelecimentos" component={Estabelecimentos} />
-            <Route
-                path="/estabelecimentos-confirmacao"
-                component={EstabelecimentosConfirmacao}
-            />
-        </Router>
-    );
+  return (
+    <Router>
+      <Route path="/" exact component={LandingPage} />
+      <Route path="/termos-de-uso" component={TermsOfUse} />
+      <Route path="/politica-de-privacidade" component={PolicyAndPrivacy} />
+      <Route path="/estabelecimentos" component={Estabelecimentos} />
+      <Route
+        path="/estabelecimentos-confirmacao"
+        component={EstabelecimentosConfirmacao}
+      />
+    </Router>
+  );
 };
 
 export default Routes;
