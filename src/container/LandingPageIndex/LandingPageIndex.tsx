@@ -17,23 +17,8 @@ const LandingPage = () => {
         });
     }, []);
 
-    const handleOnClick = () => {
-        const newWindow = window.open(
-            "https://app.deliverydagente.com/",
-            "_blank",
-            "noopener,noreferrer"
-        );
-        if (newWindow) newWindow.opener = null;
-    };
-
     const handleOnClickPlaces = () => {
         history.push("/estabelecimentos");
-        // const newWindow = window.open(
-        //     "https://estabelecimentos.deliverydagente.com/",
-        //     "_blank",
-        //     "noopener,noreferrer"
-        // );
-        // if (newWindow) newWindow.opener = null;
     };
 
     return (
