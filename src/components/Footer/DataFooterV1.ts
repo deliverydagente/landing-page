@@ -1,11 +1,11 @@
 import { FooterItemProps } from "../FooterItem";
 
 const DataFooterV1: FooterItemProps[] = [
-    {
-        iconLeft: "login",
-        label: "Pré Registro",
-        toUrl: "https://app.deliverydagente.com",
-    },
+    // {
+    //     iconLeft: "login",
+    //     label: "Pré Registro",
+    //     toUrl: "https://app.deliverydagente.com",
+    // },
     {
         iconLeft: "map",
         label: "Estabelecimentos",
