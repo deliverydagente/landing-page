@@ -27,7 +27,7 @@ const handleSubmitPlace = async ({ state }: handleSubmitPlaceProps) => {
   };
 
   try {
-    const postData = await instanceApi.post("/user/create", formData);
+    const postData = await instanceApi.post("/api/user/create", formData);
     return {
       error: false,
       data: postData,
