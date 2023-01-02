@@ -16,15 +16,6 @@ const HeaderLanding = ({ refPlaces }: HeaderLandingProps) => {
     const isNotMobile = useMediaQuery("(min-width:840px)");
     const isNotMobile2 = useMediaQuery("(min-width:350px)");
 
-    const handleOnClick = () => {
-        const newWindow = window.open(
-            "https://app.deliverydagente.com/",
-            "_blank",
-            "noopener,noreferrer"
-        );
-        if (newWindow) newWindow.opener = null;
-    };
-
     const handleGoToPlaces = () => {
         if (refPlaces) refPlaces.current.scrollIntoView({ behavior: "smooth" });
     };

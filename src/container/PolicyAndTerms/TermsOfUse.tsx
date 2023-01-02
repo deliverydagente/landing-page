@@ -23,8 +23,8 @@ const TermsOfUse = () => {
             </div>
             <div className={styles.BoxContent}>
                 <div className={styles.BoxSubTitle}>
-                    Ao acessar ao site <b>deliverydagente.com</b>, concorda em
-                    cumprir estes termos de serviço, todas as leis e
+                    Ao acessar ao site <b>deliverydagente.com.br</b>, concorda
+                    em cumprir estes termos de serviço, todas as leis e
                     regulamentos aplicáveis e concorda que é responsável pelo
                     cumprimento de todas as leis locais aplicáveis.
                     <br />
@@ -38,9 +38,11 @@ const TermsOfUse = () => {
                 <h2>1. Termos</h2>{" "}
                 <p>
                     Ao acessar ao site{" "}
-                    <a href="https://deliverydagente.com">Delivery Dagente</a>,
-                    concorda em cumprir estes termos de serviço, todas as leis e
-                    regulamentos aplicáveis e concorda que é responsável pelo
+                    <a href="https://deliverydagente.com.br">
+                        Delivery Dagente
+                    </a>
+                    , concorda em cumprir estes termos de serviço, todas as leis
+                    e regulamentos aplicáveis e concorda que é responsável pelo
                     cumprimento de todas as leis locais aplicáveis. Se você não
                     concordar com algum desses termos, está proibido de usar ou
                     acessar este site. Os materiais contidos neste site são
@@ -153,14 +155,14 @@ const TermsOfUse = () => {
                 <p>
                     Para saber mais sobre nossas práticas de privacidade, caso
                     tenha dúvidas ou se quiser fazer uma reclamação, entre em
-                    contato conosco por e-mail em geral@deliverydagente.com ou
-                    pelo correio usando as informações abaixo:
+                    contato conosco por e-mail em geral@deliverydagente.com.br
+                    ou pelo correio usando as informações abaixo:
                 </p>
-                <p>
+                {/* <p>
                     Rua Serafim Paiva Lima 213, Gondomar, PT-13, 4510-435,
                     Portugal
-                </p>
-                <span>Última atualização: 27 de Janeiro de 2022</span>
+                </p> */}
+                <span>Última atualização: 2 de Janeiro de 2023</span>
             </div>
             <Footer data={DataFooterV1} />
         </section>

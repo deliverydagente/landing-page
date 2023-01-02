@@ -174,14 +174,14 @@ const PolicyAndPrivacy = () => {
                 <p>
                     Para saber mais sobre nossas práticas de privacidade, caso
                     tenha dúvidas ou se quiser fazer uma reclamação, entre em
-                    contato conosco por e-mail em geral@deliverydagente.com ou
-                    pelo correio usando as informações abaixo:
+                    contato conosco por e-mail em geral@deliverydagente.com.br
+                    ou pelo correio usando as informações abaixo:
                 </p>
-                <p>
+                {/* <p>
                     Rua Serafim Paiva Lima 213, Gondomar, PT-13, 4510-435,
                     Portugal
-                </p>
-                <span>Última atualização: 27 de Janeiro de 2022</span>
+                </p> */}
+                <span>Última atualização: 2 de Janeiro de 2023</span>
             </div>
             <Footer data={DataFooterV1} />
         </section>
