@@ -11,19 +11,21 @@ export type handleSubmitPlaceReturn = {
 
 const handleSubmitPlace = async ({ state }: handleSubmitPlaceProps) => {
   const formData = {
-    name: state.name,
-    email: state.email,
-    marketRegistration: {
-      deliveryman: state.hasDeliveryman === 0,
-      physicalPlace: state.physicalSpace === 0,
-      products:
-        state.productQty === 0
-          ? "1 - 20"
-          : state.productQty === 1
-          ? "21 - 50"
-          : "+ 50",
+    data: {
+      name: state.name,
+      email: state.email,
+      marketRegistration: {
+        deliveryman: state.hasDeliveryman === 0,
+        physicalPlace: state.physicalSpace === 0,
+        products:
+          state.productQty === 0
+            ? "1 - 20"
+            : state.productQty === 1
+            ? "21 - 50"
+            : "+ 50",
+      },
+      instagram: state.instagram,
     },
-    instagram: state.instagram,
   };
 
   try {
